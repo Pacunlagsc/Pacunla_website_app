@@ -1,0 +1,78 @@
+<h1 class="mt-4">Welcome <%= user.name %></h1>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<div class="w3-container">
+    <center><b><p>Welcome to those who believe in the power of dreams and who would like to join me in my exploration of life.</p></b></center>
+</div>
+<div class="w3-content w3-display-container">
+<div class="w3-display-container mySlides">
+  <img src="https://thumbs.gfycat.com/DirtyRecklessHarrier-size_restricted.gif" style="width:100%">
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.dasiatravels.com/wp-content/uploads/2019/04/Kawasan-Falls.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Kawasan Falls in Badian, Cebu.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://www.pinaytravelista.com/wp-content/uploads/2016/01/Lambug-Beach-Badian-Cebu.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Lambug Beach in Badian, Cebu.
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="https://images.photowall.com/products/53988/osmena-peak-pano.jpg?h=699&q=85" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Osmena Peak in Dalaguete, Cebu.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://cf.bstatic.com/images/hotel/max1280x900/964/96484166.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Cebu Westown Lagoon - South Wing, Cebu City 
+  </div>
+</div>
+
+
+<div class="w3-display-container mySlides">
+    <img src="https://media1.tenor.com/images/7486c5365da702c196cf62d6c1d2c0bc/tenor.gif?itemid=10107118" style="width:100%">
+    </div>
+  </div>
+
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+<a href="/users/logout" class="btn btn-secondary"><b>Logout</b></a> 
